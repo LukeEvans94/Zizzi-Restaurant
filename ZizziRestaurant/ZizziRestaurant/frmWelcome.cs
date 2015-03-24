@@ -80,9 +80,13 @@ namespace ZizziRestaurant
 
         private void btnEnter_Click(object sender, EventArgs e)
         {
+            if (txtDiners.Text != "" && !txtDiners.Text.StartsWith("0"))
+            {
                 frmTableSelection tb = new frmTableSelection();
                 tb.Show();
-                this.Visible = false;          
+                this.Hide();
+            }
+                
         }
 
 
