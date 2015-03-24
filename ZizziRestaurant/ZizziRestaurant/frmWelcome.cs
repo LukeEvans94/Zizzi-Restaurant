@@ -11,13 +11,16 @@ namespace ZizziRestaurant
 {
     public partial class frmWelcome : Form
     {
+        public int numDiners = 0;
+        private string diners;
+
         public frmWelcome()
         {
             InitializeComponent();
         }
 
-       
-
+        //Numeric keypad button functions
+        #region 
         private void btn1_Click(object sender, EventArgs e)
         {
             txtDiners.Text += "1";
@@ -77,16 +80,26 @@ namespace ZizziRestaurant
         {
             txtDiners.Text = txtDiners.Text.Remove(txtDiners.Text.Length - 1, 1);
         }
+        #endregion
 
         private void btnEnter_Click(object sender, EventArgs e)
         {
             if (txtDiners.Text != "" && !txtDiners.Text.StartsWith("0"))
             {
-                frmTableSelection tb = new frmTableSelection();
+                //Convert user input to integer
+                diners = txtDiners.Text;
+                numDiners = Int32.Parse(diners);
+
+                //open table selection form and pass number of diners
+                frmTableSelection tb = new frmTableSelection(numDiners);
                 tb.Show();
                 this.Hide();
             }
-                
+            else
+            {
+                lblError.Visible = true;
+                txtDiners.Text = "";
+            }                
         }
 
 

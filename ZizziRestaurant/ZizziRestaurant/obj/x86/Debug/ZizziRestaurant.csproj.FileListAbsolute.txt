@@ -7,3 +7,4 @@ C:\Users\Daniel\Documents\Education\HND\Year 2\Group Project\ZizziRestaurant\Ziz
 C:\Users\Daniel\Documents\Education\HND\Year 2\Group Project\ZizziRestaurant\ZizziRestaurant\obj\x86\Debug\ZizziRestaurant.pdb
 C:\Users\Daniel\Documents\Education\HND\Year 2\Group Project\ZizziRestaurant\ZizziRestaurant\obj\x86\Debug\ZizziRestaurant.frmTableSelection.resources
 C:\Users\Daniel\Documents\Education\HND\Year 2\Group Project\ZizziRestaurant\ZizziRestaurant\obj\x86\Debug\ZizziRestaurant.csprojResolveAssemblyReference.cache
+C:\Users\Daniel\Documents\Education\HND\Year 2\Group Project\ZizziRestaurant\ZizziRestaurant\obj\x86\Debug\ZizziRestaurant.frmMyMessageBox.resources

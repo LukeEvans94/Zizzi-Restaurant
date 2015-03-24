@@ -44,32 +44,36 @@
             this.btn9 = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
+            this.lblError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(371, 100);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(283, 87);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(248, 17);
+            this.label1.Size = new System.Drawing.Size(415, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome to Zizzi\'s Restaurant Lincoln";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(315, 160);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(286, 140);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(350, 17);
+            this.label2.Size = new System.Drawing.Size(412, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Please enter the number of diners in your party below:";
             // 
             // txtDiners
             // 
-            this.txtDiners.Location = new System.Drawing.Point(443, 213);
+            this.txtDiners.Location = new System.Drawing.Point(456, 190);
             this.txtDiners.Name = "txtDiners";
             this.txtDiners.Size = new System.Drawing.Size(100, 22);
             this.txtDiners.TabIndex = 2;
+            this.txtDiners.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnEnter
             // 
@@ -83,7 +87,7 @@
             // 
             // btn1
             // 
-            this.btn1.Location = new System.Drawing.Point(360, 272);
+            this.btn1.Location = new System.Drawing.Point(360, 278);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(75, 23);
             this.btn1.TabIndex = 4;
@@ -93,7 +97,7 @@
             // 
             // btn2
             // 
-            this.btn2.Location = new System.Drawing.Point(456, 272);
+            this.btn2.Location = new System.Drawing.Point(456, 278);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(75, 23);
             this.btn2.TabIndex = 5;
@@ -103,7 +107,7 @@
             // 
             // btn3
             // 
-            this.btn3.Location = new System.Drawing.Point(556, 272);
+            this.btn3.Location = new System.Drawing.Point(556, 278);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(75, 23);
             this.btn3.TabIndex = 6;
@@ -113,7 +117,7 @@
             // 
             // btn4
             // 
-            this.btn4.Location = new System.Drawing.Point(360, 310);
+            this.btn4.Location = new System.Drawing.Point(360, 316);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(75, 23);
             this.btn4.TabIndex = 7;
@@ -123,7 +127,7 @@
             // 
             // btn5
             // 
-            this.btn5.Location = new System.Drawing.Point(456, 310);
+            this.btn5.Location = new System.Drawing.Point(456, 316);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(75, 23);
             this.btn5.TabIndex = 8;
@@ -133,7 +137,7 @@
             // 
             // btn6
             // 
-            this.btn6.Location = new System.Drawing.Point(556, 310);
+            this.btn6.Location = new System.Drawing.Point(556, 316);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(75, 23);
             this.btn6.TabIndex = 9;
@@ -143,7 +147,7 @@
             // 
             // btn0
             // 
-            this.btn0.Location = new System.Drawing.Point(456, 388);
+            this.btn0.Location = new System.Drawing.Point(456, 394);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(75, 23);
             this.btn0.TabIndex = 10;
@@ -153,7 +157,7 @@
             // 
             // btn7
             // 
-            this.btn7.Location = new System.Drawing.Point(360, 348);
+            this.btn7.Location = new System.Drawing.Point(360, 354);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(75, 23);
             this.btn7.TabIndex = 11;
@@ -163,7 +167,7 @@
             // 
             // btn8
             // 
-            this.btn8.Location = new System.Drawing.Point(456, 348);
+            this.btn8.Location = new System.Drawing.Point(456, 354);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(75, 23);
             this.btn8.TabIndex = 12;
@@ -173,7 +177,7 @@
             // 
             // btn9
             // 
-            this.btn9.Location = new System.Drawing.Point(556, 348);
+            this.btn9.Location = new System.Drawing.Point(556, 354);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(75, 23);
             this.btn9.TabIndex = 13;
@@ -183,7 +187,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(360, 387);
+            this.btnClear.Location = new System.Drawing.Point(360, 393);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 14;
@@ -193,7 +197,7 @@
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(556, 387);
+            this.btnBack.Location = new System.Drawing.Point(556, 393);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(75, 23);
             this.btnBack.TabIndex = 15;
@@ -201,11 +205,24 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblError.ForeColor = System.Drawing.Color.Red;
+            this.lblError.Location = new System.Drawing.Point(356, 238);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(305, 20);
+            this.lblError.TabIndex = 16;
+            this.lblError.Text = "Please input the number of diners! ";
+            this.lblError.Visible = false;
+            // 
             // frmWelcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(987, 548);
+            this.Controls.Add(this.lblError);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btn9);
@@ -228,6 +245,7 @@
             this.Name = "frmWelcome";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -252,6 +270,7 @@
         private System.Windows.Forms.Button btn9;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Label lblError;
     }
 }
 
