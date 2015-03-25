@@ -45,6 +45,8 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.lblError = new System.Windows.Forms.Label();
+            this.cmbOptions = new System.Windows.Forms.ComboBox();
+            this.btnAccept = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -69,7 +71,7 @@
             // 
             // txtDiners
             // 
-            this.txtDiners.Location = new System.Drawing.Point(456, 190);
+            this.txtDiners.Location = new System.Drawing.Point(180, 209);
             this.txtDiners.Name = "txtDiners";
             this.txtDiners.Size = new System.Drawing.Size(100, 22);
             this.txtDiners.TabIndex = 2;
@@ -77,7 +79,7 @@
             // 
             // btnEnter
             // 
-            this.btnEnter.Location = new System.Drawing.Point(423, 447);
+            this.btnEnter.Location = new System.Drawing.Point(180, 442);
             this.btnEnter.Name = "btnEnter";
             this.btnEnter.Size = new System.Drawing.Size(149, 53);
             this.btnEnter.TabIndex = 3;
@@ -87,7 +89,7 @@
             // 
             // btn1
             // 
-            this.btn1.Location = new System.Drawing.Point(360, 278);
+            this.btn1.Location = new System.Drawing.Point(109, 281);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(75, 23);
             this.btn1.TabIndex = 4;
@@ -97,7 +99,7 @@
             // 
             // btn2
             // 
-            this.btn2.Location = new System.Drawing.Point(456, 278);
+            this.btn2.Location = new System.Drawing.Point(205, 281);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(75, 23);
             this.btn2.TabIndex = 5;
@@ -107,7 +109,7 @@
             // 
             // btn3
             // 
-            this.btn3.Location = new System.Drawing.Point(556, 278);
+            this.btn3.Location = new System.Drawing.Point(305, 281);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(75, 23);
             this.btn3.TabIndex = 6;
@@ -117,7 +119,7 @@
             // 
             // btn4
             // 
-            this.btn4.Location = new System.Drawing.Point(360, 316);
+            this.btn4.Location = new System.Drawing.Point(109, 319);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(75, 23);
             this.btn4.TabIndex = 7;
@@ -127,7 +129,7 @@
             // 
             // btn5
             // 
-            this.btn5.Location = new System.Drawing.Point(456, 316);
+            this.btn5.Location = new System.Drawing.Point(205, 319);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(75, 23);
             this.btn5.TabIndex = 8;
@@ -137,7 +139,7 @@
             // 
             // btn6
             // 
-            this.btn6.Location = new System.Drawing.Point(556, 316);
+            this.btn6.Location = new System.Drawing.Point(305, 319);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(75, 23);
             this.btn6.TabIndex = 9;
@@ -147,7 +149,7 @@
             // 
             // btn0
             // 
-            this.btn0.Location = new System.Drawing.Point(456, 394);
+            this.btn0.Location = new System.Drawing.Point(205, 397);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(75, 23);
             this.btn0.TabIndex = 10;
@@ -157,7 +159,7 @@
             // 
             // btn7
             // 
-            this.btn7.Location = new System.Drawing.Point(360, 354);
+            this.btn7.Location = new System.Drawing.Point(109, 357);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(75, 23);
             this.btn7.TabIndex = 11;
@@ -167,7 +169,7 @@
             // 
             // btn8
             // 
-            this.btn8.Location = new System.Drawing.Point(456, 354);
+            this.btn8.Location = new System.Drawing.Point(205, 357);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(75, 23);
             this.btn8.TabIndex = 12;
@@ -177,7 +179,7 @@
             // 
             // btn9
             // 
-            this.btn9.Location = new System.Drawing.Point(556, 354);
+            this.btn9.Location = new System.Drawing.Point(305, 357);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(75, 23);
             this.btn9.TabIndex = 13;
@@ -187,7 +189,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(360, 393);
+            this.btnClear.Location = new System.Drawing.Point(109, 396);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 14;
@@ -197,7 +199,7 @@
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(556, 393);
+            this.btnBack.Location = new System.Drawing.Point(305, 396);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(75, 23);
             this.btnBack.TabIndex = 15;
@@ -210,18 +212,51 @@
             this.lblError.AutoSize = true;
             this.lblError.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblError.ForeColor = System.Drawing.Color.Red;
-            this.lblError.Location = new System.Drawing.Point(356, 238);
+            this.lblError.Location = new System.Drawing.Point(84, 248);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(305, 20);
             this.lblError.TabIndex = 16;
             this.lblError.Text = "Please input the number of diners! ";
             this.lblError.Visible = false;
             // 
+            // cmbOptions
+            // 
+            this.cmbOptions.FormattingEnabled = true;
+            this.cmbOptions.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cmbOptions.Location = new System.Drawing.Point(649, 207);
+            this.cmbOptions.Name = "cmbOptions";
+            this.cmbOptions.Size = new System.Drawing.Size(121, 24);
+            this.cmbOptions.TabIndex = 17;
+            this.cmbOptions.SelectedIndexChanged += new System.EventHandler(this.cmbOptions_SelectedIndexChanged);
+            // 
+            // btnAccept
+            // 
+            this.btnAccept.Enabled = false;
+            this.btnAccept.Location = new System.Drawing.Point(649, 319);
+            this.btnAccept.Name = "btnAccept";
+            this.btnAccept.Size = new System.Drawing.Size(114, 42);
+            this.btnAccept.TabIndex = 18;
+            this.btnAccept.Text = "Accept";
+            this.btnAccept.UseVisualStyleBackColor = true;
+            this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
+            // 
             // frmWelcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(987, 548);
+            this.Controls.Add(this.btnAccept);
+            this.Controls.Add(this.cmbOptions);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnClear);
@@ -271,6 +306,8 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.ComboBox cmbOptions;
+        private System.Windows.Forms.Button btnAccept;
     }
 }
 

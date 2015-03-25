@@ -82,6 +82,7 @@ namespace ZizziRestaurant
         }
         #endregion
 
+        //keypad aceptance button
         private void btnEnter_Click(object sender, EventArgs e)
         {
             if (txtDiners.Text != "" && !txtDiners.Text.StartsWith("0"))
@@ -100,6 +101,23 @@ namespace ZizziRestaurant
                 lblError.Visible = true;
                 txtDiners.Text = "";
             }                
+        }
+
+        //Drop down button
+        private void btnAccept_Click(object sender, EventArgs e)
+        {
+            frmTableSelection tbs = new frmTableSelection(cmbOptions.SelectedItem.ToString());
+            tbs.Show();
+            this.Hide();       
+        }
+
+        //enable button
+        private void cmbOptions_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbOptions.SelectedIndex > -1)
+            {
+                btnAccept.Enabled = true;
+            }
         }
 
 
